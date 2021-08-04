@@ -3,7 +3,7 @@ print("""
   | | If you're not part
   / \  of the solution
  /   \  then you must be  |
-(___)  the precipitate. |    -Trina L. Short-
+(_____)  the precipitate. |    -Trina L. Short-
 
 Aluno: Marcos Pires Viana
 Turma: Engenharia Elétrica - 3 período
@@ -236,7 +236,7 @@ while True:
     print("\numero de eletrons na camadade valencia: ",numero_de_eletrons_Valencia)
 
     print("\nexibição 2\n")
-    camadas = ["\033[91mK\033[m", "\033[91mL\033[m", "\033[91mM\033[m", "\033[91mN\033[m", "\033[91mO\033[m", "\033[91mP\033[m", "\033[91mQ\033[m"]
+    camadas = ["K", "L", "M", "N", "O", "P", "Q"]
     for i in range(len(elemento1)):
         print(camadas[i],"",elemento1[i])
     if numero_de_eletrons_Valencia < 4:
@@ -265,7 +265,7 @@ while True:
     print("\nnumero de eletrons na camadade valencia: ",numero_de_eletrons_Valencia2)
 
     print("\nexibição 2\n")
-    camadas = ["\033[91mK\033[m", "\033[91mL\033[m", "\033[91mM\033[m", "\033[91mN\033[m", "\033[91mO\033[m", "\033[91mP\033[m", "\033[91mQ\033[m"]
+    camadas = ["K", "L", "M", "N", "O", "P", "Q"]
     for i in range(len(elemento2)):
         print(camadas[i],"",elemento2[i])
     if numero_de_eletrons_Valencia2 < 4:
