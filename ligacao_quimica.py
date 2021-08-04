@@ -4,7 +4,6 @@ print("""
   / \  of the solution
  /   \  then you must be  |
 (_____)  the precipitate. |    -Trina L. Short-
-
 Aluno: Marcos Pires Viana
 Turma: Engenharia Elétrica - 3 período
 Universidade: UVV
@@ -213,8 +212,8 @@ elementos ={"Ac":89,
             "Tm":69,
             "Ts":117,
             "U":92,
-            "V=":23,
-            "W=":74,
+            "V":23,
+            "W":74,
             "Xe":54,
             "Y":39,
             "Yb":70,
@@ -231,15 +230,17 @@ while True:
     camadadevalencia1 = valencia(elemento1)
     numero_de_eletrons_Valencia=neletrons(camadadevalencia1)
 
-    print("\ncamada de valencia: ",camadadevalencia1)
+    print("\nCamada de valência: ",camadadevalencia1)
 
-    print("\numero de eletrons na camadade valencia: ",numero_de_eletrons_Valencia)
+    print("\nNúmero de eletrons na camada de valência: ",numero_de_eletrons_Valencia)
 
     print("\nexibição 2\n")
     camadas = ["K", "L", "M", "N", "O", "P", "Q"]
     for i in range(len(elemento1)):
         print(camadas[i],"",elemento1[i])
-    if numero_de_eletrons_Valencia < 4:
+    if '1s1' in camadadevalencia1:
+        material1="AMETAL"
+    elif numero_de_eletrons_Valencia < 4:
         material1="METAL"
     elif numero_de_eletrons_Valencia == 4 and "d" in camadadevalencia1[-1]:
         material1="METAL"
@@ -260,22 +261,24 @@ while True:
     camadadevalencia2 = valencia(elemento2)
     numero_de_eletrons_Valencia2=neletrons(camadadevalencia2)
 
-    print("\ncamada de valencia: ",camadadevalencia2)
+    print("\nCamada de valência: ",camadadevalencia2)
 
-    print("\nnumero de eletrons na camadade valencia: ",numero_de_eletrons_Valencia2)
+    print("\nNúmero de elétrons na camadade valência: ",numero_de_eletrons_Valencia2)
 
     print("\nexibição 2\n")
     camadas = ["K", "L", "M", "N", "O", "P", "Q"]
     for i in range(len(elemento2)):
         print(camadas[i],"",elemento2[i])
-    if numero_de_eletrons_Valencia2 < 4:
-        material2 = "METAL"
+    if '1s1' in camadadevalencia2:
+        material2="AMETAL"
+    elif numero_de_eletrons_Valencia2 < 4:
+        material2="METAL"
     elif numero_de_eletrons_Valencia2 == 4 and "d" in camadadevalencia2[-1]:
-        material2 = "METAL"
+        material2="METAL"
     elif numero_de_eletrons_Valencia2 > 4:
-        material2 = "AMETAL"
+        material2="AMETAL"
     elif numero_de_eletrons_Valencia2 == 4 and "p" in camadadevalencia2[-1]:
-        material2 = "AMETAL"
+        material2="AMETAL"
     print("\n", material2)
 
 
@@ -296,4 +299,4 @@ while True:
             Y = nome_do_elemento2
             X = nome_do_elemento1
 
-            print(X+str(8-numero_de_eletrons_Valencia2)+Y+str(numero_de_eletrons_Valencia))
+            print("\nResultado: ",X+str(8-numero_de_eletrons_Valencia2)+Y+str(numero_de_eletrons_Valencia))
