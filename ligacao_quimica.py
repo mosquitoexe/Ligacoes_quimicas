@@ -1,4 +1,4 @@
-print("""\033[33m
+print("""
    _
   | | If you're not part
   / \  of the solution
@@ -9,7 +9,7 @@ Aluno: Marcos Pires Viana
 Turma: Engenharia Elétrica - 3 período
 Universidade: UVV
 """)
-print("\033[31mATENÇÃO: não funciona com Cobre, Prata, Ouro e Molibdênio, Nióbio, Rutênio, Ródio, Paládio e Platina.\033[m")
+print("ATENÇÃO: não funciona com Cobre, Prata, Ouro e Molibdênio, Nióbio, Rutênio, Ródio, Paládio e Platina.")
 
 
 
@@ -221,7 +221,7 @@ elementos ={"Ac":89,
             "Zn":30,
             "Zr":40,}
 while True:
-    elemento1 = input("\n\033[33mNUMERO ATOMICO-elemento 1: ")
+    elemento1 = input("ELEMENTO 1: ")
     nome_do_elemento1 = elemento1
     elemento1 = elementos[elemento1]
 
@@ -250,7 +250,7 @@ while True:
     print("\n",material1)
     #***********************************
     print('_'*100)
-    elemento2 = input("\n\033[33mNUMERO ATOMICO-elemento 2: ")
+    elemento2 = input("ELEMENTO 2: ")
     nome_do_elemento2 = elemento2
 
     elemento2 = elementos[elemento2]
