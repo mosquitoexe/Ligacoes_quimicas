@@ -4,6 +4,7 @@ print("""
   / \  of the solution
  /   \  then you must be  |
 (_____)  the precipitate. |    -Trina L. Short-
+
 Aluno: Marcos Pires Viana
 Turma: Engenharia Elétrica - 3 período
 Universidade: UVV
@@ -220,7 +221,7 @@ elementos ={"Ac":89,
             "Zn":30,
             "Zr":40,}
 while True:
-    elemento1 = input("ELEMENTO 1: ")
+    elemento1 = input("\nELEMENTO 1: ")
     nome_do_elemento1 = elemento1
     elemento1 = elementos[elemento1]
 
@@ -251,7 +252,7 @@ while True:
     print("\n",material1)
     #***********************************
     print('_'*100)
-    elemento2 = input("ELEMENTO 2: ")
+    elemento2 = input("\nELEMENTO 2: ")
     nome_do_elemento2 = elemento2
 
     elemento2 = elementos[elemento2]
